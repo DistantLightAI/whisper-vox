@@ -19,7 +19,7 @@ use crate::config::Config;
 use crate::daemon::WhisperVoxDaemon;
 
 #[derive(Parser)]
-#[command(name = "whisper-vox", about = "Always-listening voice daemon for Claude Code")]
+#[command(name = "wv", about = "Always-listening voice daemon for Claude Code")]
 struct Cli {
     /// Path to config file
     #[arg(short, long)]

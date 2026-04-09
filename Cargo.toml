@@ -5,7 +5,7 @@ edition = "2021"
 description = "Always-listening voice daemon for Claude Code"
 
 [[bin]]
-name = "whisper-vox"
+name = "wv"
 path = "src/main.rs"
 
 [dependencies]

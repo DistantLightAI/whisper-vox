@@ -4,7 +4,7 @@ After=pipewire.service
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/whisper-vox
+ExecStart=/usr/local/bin/wv
 Restart=on-failure
 RestartSec=3
 Environment=DISPLAY=:0

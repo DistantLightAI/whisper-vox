@@ -49,22 +49,22 @@ Models are downloaded on first run to `~/.cache/whisper-vox/`:
 
 ```bash
 # Start daemon (foreground)
-whisper-vox start
+wv start
 
 # Start with custom config
-whisper-vox start --config /path/to/config.yaml
+wv start --config /path/to/config.yaml
 
 # Toggle VOX ↔ PTT
-whisper-vox toggle
+wv toggle
 
 # Check status
-whisper-vox status
+wv status
 
 # Stop daemon
-whisper-vox stop
+wv stop
 
 # Install as systemd user service
-whisper-vox install
+wv install
 ```
 
 ## Configuration
@@ -103,7 +103,7 @@ daemon:
 ## systemd
 
 ```bash
-whisper-vox install
+wv install
 systemctl --user enable whisper-vox
 systemctl --user start whisper-vox
 journalctl --user -u whisper-vox -f
