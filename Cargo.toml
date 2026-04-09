@@ -2,7 +2,13 @@
 name = "whisper-vox"
 version = "0.1.0"
 edition = "2021"
-description = "Always-listening voice daemon for Claude Code"
+description = "Always-listening voice daemon for Claude Code — continuous speech-to-text with VAD, whisper.cpp, and terminal injection"
+license = "MIT"
+repository = "https://github.com/DistantLightAI/whisper-vox"
+homepage = "https://github.com/DistantLightAI/whisper-vox"
+readme = "README.md"
+keywords = ["voice", "whisper", "speech-to-text", "vad", "daemon"]
+categories = ["command-line-utilities", "multimedia::audio"]
 
 [[bin]]
 name = "wv"

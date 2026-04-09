@@ -32,14 +32,20 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo apt install xdotool libclang-dev cmake pkg-config libasound2-dev
 ```
 
-## Build
+## Install
 
 ```bash
-cd whisper-vox
-cargo build --release
+# From crates.io (adds `wv` to your PATH)
+cargo install whisper-vox
 ```
 
-The binary is at `target/release/whisper-vox` (7MB).
+Or build from source:
+
+```bash
+git clone https://github.com/DistantLightAI/whisper-vox.git
+cd whisper-vox
+cargo install --path .
+```
 
 Models are downloaded on first run to `~/.cache/whisper-vox/`:
 - `silero_vad.onnx` (~2MB)
