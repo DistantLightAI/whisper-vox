@@ -1,0 +1,13 @@
+[Unit]
+Description=whisper-vox always-listening voice daemon
+After=pipewire.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/whisper-vox
+Restart=on-failure
+RestartSec=3
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=default.target

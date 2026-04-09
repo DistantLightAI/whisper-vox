@@ -1,0 +1,27 @@
+# whisper-vox configuration
+audio:
+  sample_rate: 16000
+  channels: 1
+  frame_duration_ms: 30
+  device: null  # null = system default
+
+vad:
+  threshold: 0.5
+  silence_duration_ms: 500  # 300-800ms configurable
+  min_speech_duration_ms: 250
+
+transcriber:
+  model_size: "small.en"  # ggml model name
+  language: "en"
+
+agreement:
+  n: 2  # LocalAgreement-n: require n consecutive passes to agree
+
+injector:
+  backend: "xdotool"  # xdotool (X11) or ydotool (Wayland)
+  inter_key_delay_ms: 12
+
+daemon:
+  mode: "vox"  # vox or ptt
+  pid_file: "/tmp/whisper-vox.pid"
+  socket_path: "/tmp/whisper-vox.sock"

@@ -1,0 +1,1 @@
+- [Session handoff](session-2026-04-09.md) — initial PRD session, research findings, architecture decisions
